@@ -1,4 +1,4 @@
-# 4 - Regressor example
+# Regressor example
 # https://github.com/keloli/KerasPractise/edit/master/Regressor.py  
 
 import numpy as np
