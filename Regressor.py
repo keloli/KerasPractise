@@ -1,5 +1,5 @@
 # 4 - Regressor example
-# https://github.com/MorvanZhou/tutorials/edit/master/kerasTUT/4-regressor_example.py
+# https://github.com/keloli/KerasPractise/edit/master/Regressor.py  
 
 import numpy as np
 np.random.seed(1337)  # for reproducibility
