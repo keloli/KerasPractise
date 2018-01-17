@@ -21,7 +21,7 @@ y_test = np_utils.to_categorical(y_test, num_classes=10)
 
 # Another way to build your neural net
 model = Sequential([
-    Dense(32, input_dim=784),
+    Dense(400, input_dim=784),
     Activation('relu'),
     Dense(10),
     Activation('softmax'),
