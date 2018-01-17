@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # _*_ coding: utf-8 _*_
+=======
+>>>>>>> 661603744b9888e67065144582f1c4eb53a563ff
 # Regressor example
 # https://github.com/keloli/KerasPractise/edit/master/Regressor.py
 
@@ -13,7 +16,10 @@ import matplotlib.pyplot as plt
 X = np.linspace(-1, 1, 200)
 # print (X)
 np.random.shuffle(X)    # randomize the data
+<<<<<<< HEAD
 print (X)
+=======
+>>>>>>> 661603744b9888e67065144582f1c4eb53a563ff
 Y = 0.5 * X + 2 + np.random.normal(0, 0.05, (200, ))
 # plot data
 plt.scatter(X, Y)
