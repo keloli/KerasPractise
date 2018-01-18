@@ -19,7 +19,7 @@ X_test = X_test.reshape(X_test.shape[0], -1) / 255.      # normalize
 y_train = np_utils.to_categorical(y_train, num_classes=10)
 y_test = np_utils.to_categorical(y_test, num_classes=10)
 
-# Another way to build your neural net
+# 不使用model.add()，用一下方式也可以定义网络
 model = Sequential([
     Dense(400, input_dim=784),
     Activation('relu'),
@@ -27,7 +27,7 @@ model = Sequential([
     Activation('softmax'),
 ])
 
-# Another way to define your optimizer
+# 定义优化器
 rmsprop = RMSprop(lr=0.001, rho=0.9, epsilon=1e-08, decay=0.0)
 
 # We add metrics to get more results you want to see
@@ -37,7 +37,7 @@ model.compile(optimizer=rmsprop,
 
 print('Training ------------')
 # Another way to train the model
-model.fit(X_train, y_train, epochs=2, batch_size=32)
+model.fit(X_train, y_train, epochs=4, batch_size=32)
 
 print('\nTesting ------------')
 # Evaluate the model with the metrics we defined earlier
